@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Link Safety Test</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111827;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .box {
+        max-width: 650px;
+        margin: 20px;
+        padding: 35px;
+        background: #1f2937;
+        border-radius: 18px;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0,0,0,.5);
+    }
+
+    .warning {
+        font-size: 55px;
+    }
+
+    h1 {
+        color: #f87171;
+        margin-bottom: 10px;
+    }
+
+    .url {
+        background: #111827;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        color: #fbbf24;
+        word-break: break-all;
+    }
+
+    .lesson {
+        text-align: left;
+        background: #374151;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 25px;
+    }
+
+    li {
+        margin: 12px 0;
+    }
+
+    .good {
+        color: #4ade80;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <div class="warning">⚠️</div>
+
+    <h1>HEY! YOU CLICKED A SUSPICIOUS LINK!</h1>
+
+    <p>This was a <strong>family internet-safety test</strong>.</p>
+
+    <div class="url">
+        🔗 You clicked a link before checking where it went.
+    </div>
+
+    <h2>Don't panic. Here's what to do next.</h2>
+
+    <div class="lesson">
+
+        <h3>🛑 Before clicking a link:</h3>
+
+        <ul>
+            <li>Check the <strong>website address</strong>.</li>
+            <li>Watch for misspellings like <strong>paypa1.com</strong>.</li>
+            <li>Be suspicious of messages saying <strong>"ACT NOW!"</strong></li>
+            <li>Don't enter passwords after following an unexpected link.</li>
+            <li>When in doubt, open the company's website yourself instead.</li>
+        </ul>
+
+        <h3 class="good">✅ Golden Rule</h3>
+
+        <p>
+            <strong>If you weren't expecting the link, don't click it.</strong>
+        </p>
+
+    </div>
+
+    <a class="button" href="https://www.google.com">
+        Continue Safely
+    </a>
+
+</div>
+
+</body>
+</html>
