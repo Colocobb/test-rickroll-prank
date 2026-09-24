@@ -3,115 +3,180 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Family Link Safety Test</title>
+
+<title>Internet Safety Check</title>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background: #111827;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0f172a;
         color: white;
         display: flex;
-        justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        justify-content: center;
+        padding: 20px;
     }
 
-    .box {
-        max-width: 650px;
-        margin: 20px;
+    .container {
+        width: 100%;
+        max-width: 700px;
+        background: #1e293b;
+        border-radius: 20px;
         padding: 35px;
-        background: #1f2937;
-        border-radius: 18px;
         text-align: center;
-        box-shadow: 0 10px 40px rgba(0,0,0,.5);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.4);
     }
 
-    .warning {
-        font-size: 55px;
+    .icon {
+        font-size: 70px;
+        margin-bottom: 10px;
     }
 
     h1 {
         color: #f87171;
-        margin-bottom: 10px;
+        font-size: 32px;
+        margin: 10px 0;
     }
 
-    .url {
-        background: #111827;
+    .subtitle {
+        color: #cbd5e1;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .fake-link {
+        background: #020617;
+        border: 1px solid #475569;
+        border-radius: 10px;
         padding: 15px;
-        border-radius: 8px;
-        margin: 20px 0;
+        margin: 25px 0;
         color: #fbbf24;
-        word-break: break-all;
+        word-break: break-word;
+        font-family: monospace;
     }
 
     .lesson {
+        background: #334155;
+        border-radius: 15px;
+        padding: 25px;
         text-align: left;
-        background: #374151;
-        padding: 20px;
-        border-radius: 12px;
         margin-top: 25px;
     }
 
-    li {
-        margin: 12px 0;
+    .lesson h2 {
+        margin-top: 0;
     }
 
-    .good {
-        color: #4ade80;
+    .lesson li {
+        margin: 14px 0;
+        line-height: 1.5;
+    }
+
+    .rule {
+        background: #14532d;
+        border: 1px solid #22c55e;
+        padding: 18px;
+        border-radius: 12px;
+        margin-top: 25px;
+        font-size: 18px;
     }
 
     .button {
         display: inline-block;
-        margin-top: 20px;
-        padding: 12px 20px;
+        margin-top: 25px;
+        padding: 14px 25px;
         background: #2563eb;
         color: white;
         text-decoration: none;
-        border-radius: 8px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background: #1d4ed8;
+    }
+
+    .footer {
+        margin-top: 25px;
+        color: #94a3b8;
+        font-size: 13px;
     }
 </style>
 </head>
 
 <body>
 
-<div class="box">
+<div class="container">
 
-    <div class="warning">⚠️</div>
+    <div class="icon">⚠️</div>
 
-    <h1>HEY! YOU CLICKED A SUSPICIOUS LINK!</h1>
+    <h1>HEY! STOP!</h1>
 
-    <p>This was a <strong>family internet-safety test</strong>.</p>
+    <p class="subtitle">
+        You just clicked a link without checking where it went.
+    </p>
 
-    <div class="url">
-        🔗 You clicked a link before checking where it went.
+    <div class="fake-link">
+        🔗 Suspicious-Link-Example.com
     </div>
 
-    <h2>Don't panic. Here's what to do next.</h2>
+    <h2>This was a safety test.</h2>
+
+    <p class="subtitle">
+        Nothing happened to your device. The point is to practice
+        recognizing suspicious links before they become a real problem.
+    </p>
 
     <div class="lesson">
 
-        <h3>🛑 Before clicking a link:</h3>
+        <h2>🛡️ Check Before You Click</h2>
 
         <ul>
-            <li>Check the <strong>website address</strong>.</li>
-            <li>Watch for misspellings like <strong>paypa1.com</strong>.</li>
-            <li>Be suspicious of messages saying <strong>"ACT NOW!"</strong></li>
-            <li>Don't enter passwords after following an unexpected link.</li>
-            <li>When in doubt, open the company's website yourself instead.</li>
+            <li>
+                <strong>Look at the address.</strong><br>
+                Does the website name actually belong to the company?
+            </li>
+
+            <li>
+                <strong>Watch for misspellings.</strong><br>
+                Example: paypa1.com instead of paypal.com.
+            </li>
+
+            <li>
+                <strong>Beware of urgency.</strong><br>
+                "ACT NOW!" and "YOUR ACCOUNT WILL BE CLOSED!" are common tricks.
+            </li>
+
+            <li>
+                <strong>Don't enter passwords from unexpected links.</strong><br>
+                Open the company's website yourself instead.
+            </li>
+
+            <li>
+                <strong>When in doubt, don't click.</strong><br>
+                Ask someone you trust.
+            </li>
         </ul>
-
-        <h3 class="good">✅ Golden Rule</h3>
-
-        <p>
-            <strong>If you weren't expecting the link, don't click it.</strong>
-        </p>
 
     </div>
 
+    <div class="rule">
+        🛑 <strong>STOP → CHECK → VERIFY → CLICK</strong>
+    </div>
+
     <a class="button" href="https://www.google.com">
-        Continue Safely
+        I Understand
     </a>
+
+    <div class="footer">
+        Family Internet Safety • Educational Test
+    </div>
 
 </div>
 
